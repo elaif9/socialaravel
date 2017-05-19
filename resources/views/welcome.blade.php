@@ -4,6 +4,6 @@
    Welcome!
 @endsection
 
-@section('title')
-  This is the content 
+@section('content')
+  This is the content
 @endsection
