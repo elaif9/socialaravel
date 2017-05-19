@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-      {{ HTML::style('css/bootstrap/css/bootstrap.min.css')}}
+       <link href="{{ asset('css/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
       <title>@yield('title')</title>
     </head>
     <body>
+      @include('includes.header')
       <div class="container">
          @yield('content')
       </div>
