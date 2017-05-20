@@ -2,6 +2,7 @@
 <html>
     <head>
        <link href="{{ asset('css/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+       <link href="{{ asset('css/main.css') }}" rel="stylesheet">
       <title>@yield('title')</title>
     </head>
     <body>
