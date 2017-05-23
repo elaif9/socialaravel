@@ -17,30 +17,21 @@
     <section class="row posts">
         <div class="col-md-6 col-md-offset-3">
             <header><h3>Timeline</h3></header>
-            <article class="post">
-                <p>Lorem ipsum dolor sit amet</p>
-                <div class="info">
-                    Posted By And Date Here
-                </div>
-                <div class="interaction">
-                    <a href="#">Like</a> |
-                    <a href="#">Dislike</a> |
-                    <a href="#">Edit</a> |
-                    <a href="#">Delete</a>
-                </div>
-            </article>
-            <article class="post">
-                <p>Lorem ipsum dolor sit amet</p>
-                <div class="info">
-                    Posted By And Date Here
-                </div>
-                <div class="interaction">
-                    <a href="#">Like</a> |
-                    <a href="#">Dislike</a> |
-                    <a href="#">Edit</a> |
-                    <a href="#">Delete</a>
-                </div>
-            </article>
+            @foreach($posts as $post)
+                <article class="post">
+                    <p>{{ $post->body }}</p>
+                    <div class="info">
+                        Posted By {{ $post->user->first_name }} On {{ $post->created_at }}
+                    </div>
+                    <div class="interaction">
+                        <a href="#">Like</a> |
+                        <a href="#">Dislike</a> |
+                        <a href="#">Edit</a> |
+                        <a href="#">Delete</a>
+                    </div>
+                </article>
+            @endforeach
+
         </div>
     </section>
 @endsection
