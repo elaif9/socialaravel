@@ -5,7 +5,9 @@ use App\Post;
 use Illuminate\Http\Request;
 
 class PostController extends Controller{
+
     public function postCreatePost(Request $request) {
+
         // Validation
         $this->validate($request, [
             'body' => 'required|max:200'
@@ -16,7 +18,7 @@ class PostController extends Controller{
         $message = 'There Was An Error';
 
         if ($request->user()->posts()->save($post)){
-            $message = 'Post Send';
+            $message = 'Post successfully Send';
         }
         return redirect()->route('dashboard')->with(['message' => $message]);
     }
