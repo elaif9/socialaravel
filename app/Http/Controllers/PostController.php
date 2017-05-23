@@ -6,7 +6,12 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller{
 
+    public function getDashboard(){
+        return view('dashboard');
+    }
+
     public function postCreatePost(Request $request) {
+
 
         // Validation
         $this->validate($request, [
