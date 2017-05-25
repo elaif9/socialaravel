@@ -42,7 +42,7 @@
         </div>
     </section>
 
-    <div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal fade" tabindex="-1" role="dialog" id="edit-modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -52,7 +52,12 @@
                     <h4 class="modal-title">Edit Post</h4>
                     </div>
                     <div class="modal-body">
-                        <p>This for edit</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="post-body">Edit post</label>
+                                <textarea class="form-control" name="post-body" id="post-body" rows="5"></textarea>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
