@@ -10,7 +10,7 @@
       <div class="container">
          @yield('content')
       </div>
-      <script src="{{ asset('jquery/jquery-1.11.1.min.js') }}"></script>
+      <script src="{{ asset('jquery/jquery-1.12.0.min.js') }}"></script>
       <script src="{{ asset('jquery/jquery-migrate-1.2.1.min.js') }}"></script>
       <script src="{{ asset('css/bootstrap/js/bootstrap.min.js') }}"></script>
       <script src="{{ asset('jquery/app.js') }}"></script>

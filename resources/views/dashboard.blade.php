@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('title')
-    Change Dashboard Title
+    Dashboard
 @endsection
 
 @section('content')
